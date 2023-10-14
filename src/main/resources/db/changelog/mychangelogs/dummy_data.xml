@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <!-- Insertion de données -->
+    <!-- Début des insertions de données dans la table compte -->
+
+    <changeSet id="1" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (1, 'Actif', 'Agence1', '12345', 'USD', 'Compte 1', 'Epargne', 1000.00)</sql>
+    </changeSet>
+
+    <changeSet id="2" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (2, 'Inactif', 'Agence2', '54321', 'EUR', 'Compte 2', 'Courant', 500.00)</sql>
+    </changeSet>
+
+    <changeSet id="3" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (3, 'Actif', 'Agence1', '98765', 'USD', 'Compte 3', 'Epargne', 750.00)</sql>
+    </changeSet>
+
+    <changeSet id="4" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (4, 'Inactif', 'Agence3', '56789', 'USD', 'Compte 4', 'Courant', 2000.00)</sql>
+    </changeSet>
+
+    <changeSet id="5" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (5, 'Actif', 'Agence2', '54321', 'EUR', 'Compte 5', 'Epargne', 1250.00)</sql>
+    </changeSet>
+
+    <changeSet id="6" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (6, 'Inactif', 'Agence3', '24680', 'USD', 'Compte 6', 'Courant', 1500.00)</sql>
+    </changeSet>
+
+    <changeSet id="7" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (7, 'Actif', 'Agence1', '13579', 'USD', 'Compte 7', 'Epargne', 3000.00)</sql>
+    </changeSet>
+
+    <changeSet id="8" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (8, 'Inactif', 'Agence2', '86420', 'EUR', 'Compte 8', 'Courant', 800.00)</sql>
+    </changeSet>
+
+    <changeSet id="9" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (9, 'Actif', 'Agence1', '24680', 'USD', 'Compte 9', 'Epargne', 2250.00)</sql>
+    </changeSet>
+
+    <changeSet id="10" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (10, 'Inactif', 'Agence3', '98765', 'USD', 'Compte 10', 'Courant', 4000.00)</sql>
+    </changeSet>
+
+    <changeSet id="11" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (11, 'Actif', 'Agence2', '35791', 'EUR', 'Compte 11', 'Epargne', 2750.00)</sql>
+    </changeSet>
+
+    <changeSet id="12" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (12, 'Inactif', 'Agence3', '57931', 'USD', 'Compte 12', 'Courant', 1800.00)</sql>
+    </changeSet>
+
+    <changeSet id="13" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (13, 'Actif', 'Agence1', '79235', 'USD', 'Compte 13', 'Epargne', 2200.00)</sql>
+    </changeSet>
+
+    <changeSet id="14" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (14, 'Inactif', 'Agence2', '23567', 'EUR', 'Compte 14', 'Courant', 600.00)</sql>
+    </changeSet>
+
+    <changeSet id="15" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (15, 'Actif', 'Agence1', '98672', 'USD', 'Compte 15', 'Epargne', 1450.00)</sql>
+    </changeSet>
+
+    <changeSet id="16" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (16, 'Inactif', 'Agence3', '67892', 'USD', 'Compte 16', 'Courant', 2700.00)</sql>
+    </changeSet>
+
+    <changeSet id="17" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (17, 'Actif', 'Agence2', '12345', 'EUR', 'Compte 17', 'Epargne', 800.00)</sql>
+    </changeSet>
+
+    <changeSet id="18" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (18, 'Inactif', 'Agence1', '54321', 'USD', 'Compte 18', 'Courant', 1200.00)</sql>
+    </changeSet>
+
+    <changeSet id="19" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (19, 'Actif', 'Agence3', '98765', 'USD', 'Compte 19', 'Epargne', 600.00)</sql>
+    </changeSet>
+
+    <changeSet id="20" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (20, 'Inactif', 'Agence2', '13579', 'EUR', 'Compte 20', 'Courant', 1500.00)</sql>
+    </changeSet>
+
+    <changeSet id="21" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (21, 'Actif', 'Agence1', '86420', 'USD', 'Compte 21', 'Epargne', 1750.00)</sql>
+    </changeSet>
+
+    <changeSet id="22" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (22, 'Inactif', 'Agence3', '24680', 'USD', 'Compte 22', 'Courant', 3000.00)</sql>
+    </changeSet>
+
+    <changeSet id="23" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (23, 'Actif', 'Agence2', '35791', 'EUR', 'Compte 23', 'Epargne', 2250.00)</sql>
+    </changeSet>
+
+    <changeSet id="24" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (24, 'Inactif', 'Agence3', '57931', 'USD', 'Compte 24', 'Courant', 4000.00)</sql>
+    </changeSet>
+
+    <changeSet id="25" author="toueileb">
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+             VALUES (25, 'Inactif', 'Agence3', '57931', 'USD', 'Compte 25', 'Courant', 4000.00)</sql>
+    </changeSet>
+
+    <!-- Fin des insertions de données dans la table compte -->
+
+
+    <!-- Début des insertions de données dans la table utilisateur -->
+
+    <changeSet id="26" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (1, false, false, 'Agence1', 'Français', 'Admin', '2023-01-15 09:30:00', 1)</sql>
+    </changeSet>
+
+    <changeSet id="27" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (2, true, false, 'Agence2', 'Anglais', 'Utilisateur', '2023-02-20 14:45:00', 2)</sql>
+    </changeSet>
+
+    <changeSet id="28" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (3, false, true, 'Agence3', 'Espagnol', 'Utilisateur', '2023-03-10 16:20:00', 3)</sql>
+    </changeSet>
+
+    <changeSet id="29" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (4, true, true, 'Agence1', 'Français', 'Admin', '2023-04-05 10:15:00', 4)</sql>
+    </changeSet>
+
+    <changeSet id="30" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (5, false, false, 'Agence2', 'Anglais', 'Utilisateur', '2023-05-30 11:55:00', 5)</sql>
+    </changeSet>
+
+    <changeSet id="31" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (6, true, true, 'Agence3', 'Espagnol', 'Utilisateur', '2023-06-12 08:10:00', 6)</sql>
+    </changeSet>
+
+    <changeSet id="32" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (7, false, false, 'Agence1', 'Français', 'Admin', '2023-07-25 13:40:00', 7)</sql>
+    </changeSet>
+
+    <changeSet id="33" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (8, true, true, 'Agence2', 'Anglais', 'Utilisateur', '2023-08-17 15:25:00', 8)</sql>
+    </changeSet>
+
+    <changeSet id="34" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (9, false, false, 'Agence3', 'Espagnol', 'Utilisateur', '2023-09-21 07:50:00', 9)</sql>
+    </changeSet>
+
+    <changeSet id="35" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (10, true, true, 'Agence1', 'Français', 'Admin', '2023-10-02 11:15:00', 10)</sql>
+    </changeSet>
+
+    <changeSet id="36" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (11, false, false, 'Agence2', 'Anglais', 'Utilisateur', '2023-11-08 12:35:00', 11)</sql>
+    </changeSet>
+
+    <changeSet id="37" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (12, true, true, 'Agence3', 'Espagnol', 'Utilisateur', '2023-12-05 09:10:00', 12)</sql>
+    </changeSet>
+
+    <changeSet id="38" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (13, false, false, 'Agence1', 'Français', 'Admin', '2024-01-12 08:20:00', 13)</sql>
+    </changeSet>
+
+    <changeSet id="39" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (14, true, true, 'Agence2', 'Anglais', 'Utilisateur', '2024-02-18 13:45:00', 14)</sql>
+    </changeSet>
+
+    <changeSet id="40" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (15, false, false, 'Agence3', 'Espagnol', 'Utilisateur', '2024-03-09 14:30:00', 15)</sql>
+    </changeSet>
+
+    <changeSet id="41" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (16, true, true, 'Agence1', 'Français', 'Admin', '2024-04-24 10:55:00', 16)</sql>
+    </changeSet>
+
+    <changeSet id="42" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (17, false, false, 'Agence2', 'Anglais', 'Utilisateur', '2024-05-18 11:30:00', 17)</sql>
+    </changeSet>
+
+    <changeSet id="43" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (18, true, true, 'Agence3', 'Espagnol', 'Utilisateur', '2024-06-07 09:40:00', 18)</sql>
+    </changeSet>
+
+    <changeSet id="44" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (19, false, false, 'Agence1', 'Français', 'Admin', '2024-07-02 13:15:00', 19)</sql>
+    </changeSet>
+
+    <changeSet id="45" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (20, true, true, 'Agence2', 'Anglais', 'Utilisateur', '2024-08-28 15:45:00', 20)</sql>
+    </changeSet>
+
+    <changeSet id="46" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (21, false, false, 'Agence3', 'Espagnol', 'Utilisateur', '2024-09-11 08:55:00', 21)</sql>
+    </changeSet>
+
+    <changeSet id="47" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (22, true, true, 'Agence1', 'Français', 'Admin', '2024-10-19 11:40:00', 22)</sql>
+    </changeSet>
+
+    <changeSet id="48" author="toueileb">
+        <sql>INSERT INTO UTILISATEUR (id, ACCOUNT_EXPIRED, ACCOUNT_LOCKED, AGENCE, LANGUE, TYPE_PROFILE,
+                                      DATE_LAST_CONNECTION, COMPTE_ID)
+             VALUES (23, false, false, 'Agence2', 'Anglais', 'Utilisateur', '2024-11-23 12:15:00', 23)</sql>
+    </changeSet>
+    <!-- Fin des insertions de données dans la table utilisateur -->
+
+    <!-- Début des insertions de données dans la table mouvement -->
+
+    <!-- Insertion de données dans la table MOUVEMENT à partir de l'ID 49 -->
+    <changeSet id="50" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (49, 49, 4900.00, 'Référence 49', 1)</sql>
+    </changeSet>
+
+    <changeSet id="51" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (50, 50, 5000.00, 'Référence 50', 2)</sql>
+    </changeSet>
+
+    <changeSet id="52" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (51, 51, 5100.00, 'Référence 51', 1)</sql>
+    </changeSet>
+
+    <changeSet id="53" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (52, 52, 5200.00, 'Référence 52', 2)</sql>
+    </changeSet>
+
+    <changeSet id="54" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (53, 53, 5300.00, 'Référence 53', 1)</sql>
+    </changeSet>
+
+    <changeSet id="55" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (54, 54, 5400.00, 'Référence 54', 2)</sql>
+    </changeSet>
+
+    <changeSet id="56" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (55, 55, 5500.00, 'Référence 55', 1)</sql>
+    </changeSet>
+
+    <changeSet id="57" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (56, 56, 5600.00, 'Référence 56', 2)</sql>
+    </changeSet>
+
+    <changeSet id="58" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (57, 57, 5700.00, 'Référence 57', 1)</sql>
+    </changeSet>
+
+    <changeSet id="59" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (58, 58, 5800.00, 'Référence 58', 2)</sql>
+    </changeSet>
+
+    <changeSet id="60" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (59, 59, 5900.00, 'Référence 59', 1)</sql>
+    </changeSet>
+
+    <changeSet id="61" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (60, 60, 6000.00, 'Référence 60', 2)</sql>
+    </changeSet>
+
+    <changeSet id="62" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (61, 61, 6100.00, 'Référence 61', 1)</sql>
+    </changeSet>
+
+    <changeSet id="63" author="toueileb">
+        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
+             VALUES (62, 62, 6200.00, 'Référence 62', 2)</sql>
+    </changeSet>
+
+
+    <!-- Fin des insertions de données dans la table mouvement -->
+
+
+</databaseChangeLog>
+
+

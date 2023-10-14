@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="1" author="toueileb">
+        <createTable tableName="COMPTE">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="STATUT" type="VARCHAR(255)"/>
+            <column name="agence" type="VARCHAR(255)"/>
+            <column name="rib" type="VARCHAR(255)"/>
+            <column name="devise" type="VARCHAR(255)"/>
+            <column name="intitule" type="VARCHAR(255)"/>
+            <column name="typeCompte" type="VARCHAR(255)"/>
+            <column name="SOLDE" type="DECIMAL(10, 2)"/>
+        </createTable>
+    </changeSet>
+
+
+</databaseChangeLog>
+

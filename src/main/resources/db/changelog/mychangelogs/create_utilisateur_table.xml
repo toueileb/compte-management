@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="5" author="toueileb">
+        <createTable tableName="UTILISATEUR">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="ACCOUNT_EXPIRED" type="BOOLEAN"/>
+            <column name="ACCOUNT_LOCKED" type="BOOLEAN"/>
+            <column name="AGENCE" type="VARCHAR(255)"/>
+            <column name="LANGUE" type="VARCHAR(255)"/>
+            <column name="TYPE_PROFILE" type="VARCHAR(255)"/>
+            <column name="DATE_LAST_CONNECTION" type="TIMESTAMP"/>
+            <column name="COMPTE_ID" type="BIGINT">
+                <constraints foreignKeyName="fk_utilisateur_compte" references="COMPTE(id)"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
+
