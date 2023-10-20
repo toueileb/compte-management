@@ -7,127 +7,127 @@
     <!-- Début des insertions de données dans la table compte -->
 
     <changeSet id="1" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (1, 'Actif', 'Agence1', '12345', 'USD', 'Compte 1', 'Epargne', 1000.00)</sql>
     </changeSet>
 
     <changeSet id="2" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (2, 'Inactif', 'Agence2', '54321', 'EUR', 'Compte 2', 'Courant', 500.00)</sql>
     </changeSet>
 
     <changeSet id="3" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (3, 'Actif', 'Agence1', '98765', 'USD', 'Compte 3', 'Epargne', 750.00)</sql>
     </changeSet>
 
     <changeSet id="4" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (4, 'Inactif', 'Agence3', '56789', 'USD', 'Compte 4', 'Courant', 2000.00)</sql>
     </changeSet>
 
     <changeSet id="5" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (5, 'Actif', 'Agence2', '54321', 'EUR', 'Compte 5', 'Epargne', 1250.00)</sql>
     </changeSet>
 
     <changeSet id="6" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (6, 'Inactif', 'Agence3', '24680', 'USD', 'Compte 6', 'Courant', 1500.00)</sql>
     </changeSet>
 
     <changeSet id="7" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (7, 'Actif', 'Agence1', '13579', 'USD', 'Compte 7', 'Epargne', 3000.00)</sql>
     </changeSet>
 
     <changeSet id="8" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (8, 'Inactif', 'Agence2', '86420', 'EUR', 'Compte 8', 'Courant', 800.00)</sql>
     </changeSet>
 
     <changeSet id="9" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (9, 'Actif', 'Agence1', '24680', 'USD', 'Compte 9', 'Epargne', 2250.00)</sql>
     </changeSet>
 
     <changeSet id="10" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (10, 'Inactif', 'Agence3', '98765', 'USD', 'Compte 10', 'Courant', 4000.00)</sql>
     </changeSet>
 
     <changeSet id="11" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (11, 'Actif', 'Agence2', '35791', 'EUR', 'Compte 11', 'Epargne', 2750.00)</sql>
     </changeSet>
 
     <changeSet id="12" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (12, 'Inactif', 'Agence3', '57931', 'USD', 'Compte 12', 'Courant', 1800.00)</sql>
     </changeSet>
 
     <changeSet id="13" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (13, 'Actif', 'Agence1', '79235', 'USD', 'Compte 13', 'Epargne', 2200.00)</sql>
     </changeSet>
 
     <changeSet id="14" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (14, 'Inactif', 'Agence2', '23567', 'EUR', 'Compte 14', 'Courant', 600.00)</sql>
     </changeSet>
 
     <changeSet id="15" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (15, 'Actif', 'Agence1', '98672', 'USD', 'Compte 15', 'Epargne', 1450.00)</sql>
     </changeSet>
 
     <changeSet id="16" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (16, 'Inactif', 'Agence3', '67892', 'USD', 'Compte 16', 'Courant', 2700.00)</sql>
     </changeSet>
 
     <changeSet id="17" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (17, 'Actif', 'Agence2', '12345', 'EUR', 'Compte 17', 'Epargne', 800.00)</sql>
     </changeSet>
 
     <changeSet id="18" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (18, 'Inactif', 'Agence1', '54321', 'USD', 'Compte 18', 'Courant', 1200.00)</sql>
     </changeSet>
 
     <changeSet id="19" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (19, 'Actif', 'Agence3', '98765', 'USD', 'Compte 19', 'Epargne', 600.00)</sql>
     </changeSet>
 
     <changeSet id="20" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (20, 'Inactif', 'Agence2', '13579', 'EUR', 'Compte 20', 'Courant', 1500.00)</sql>
     </changeSet>
 
     <changeSet id="21" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (21, 'Actif', 'Agence1', '86420', 'USD', 'Compte 21', 'Epargne', 1750.00)</sql>
     </changeSet>
 
     <changeSet id="22" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (22, 'Inactif', 'Agence3', '24680', 'USD', 'Compte 22', 'Courant', 3000.00)</sql>
     </changeSet>
 
     <changeSet id="23" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (23, 'Actif', 'Agence2', '35791', 'EUR', 'Compte 23', 'Epargne', 2250.00)</sql>
     </changeSet>
 
     <changeSet id="24" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (24, 'Inactif', 'Agence3', '57931', 'USD', 'Compte 24', 'Courant', 4000.00)</sql>
     </changeSet>
 
     <changeSet id="25" author="toueileb">
-        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, typeCompte, SOLDE)
+        <sql>INSERT INTO COMPTE (id, STATUT, agence, rib, devise, intitule, TYPE_COMPTE, SOLDE)
              VALUES (25, 'Inactif', 'Agence3', '57931', 'USD', 'Compte 25', 'Courant', 4000.00)</sql>
     </changeSet>
 

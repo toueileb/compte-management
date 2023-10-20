@@ -15,6 +15,9 @@ import java.math.BigDecimal;
 public class Mouvement implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * The Id.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;

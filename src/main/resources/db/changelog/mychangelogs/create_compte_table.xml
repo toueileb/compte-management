@@ -13,7 +13,7 @@
             <column name="rib" type="VARCHAR(255)"/>
             <column name="devise" type="VARCHAR(255)"/>
             <column name="intitule" type="VARCHAR(255)"/>
-            <column name="typeCompte" type="VARCHAR(255)"/>
+            <column name="TYPE_COMPTE" type="VARCHAR(255)"/>
             <column name="SOLDE" type="DECIMAL(10, 2)"/>
         </createTable>
     </changeSet>

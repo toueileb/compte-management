@@ -19,6 +19,9 @@ import java.util.Set;
 public class Compte implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * The Id.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
@@ -43,6 +46,5 @@ public class Compte implements Serializable {
 
     @OneToMany(mappedBy = "compte", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Mouvement> mouvements = new LinkedHashSet<>(0);
-
 
 }

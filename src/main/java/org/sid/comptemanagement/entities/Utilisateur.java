@@ -11,11 +11,14 @@ import java.time.LocalDateTime;
  * The persistent class for the UTILISATEUR database table.
  */
 @Entity
-@Data
 @Table(name = "UTILISATEUR")
+@Data
 public class Utilisateur implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * The Id.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
@@ -41,8 +44,7 @@ public class Utilisateur implements Serializable {
     private LocalDateTime dateLastConnection;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "COMPTE_ID")
+    @JoinColumn(name = "COMPTE_ID", nullable = false)
     private Compte compte;
-
 
 }
