@@ -3,6 +3,7 @@ package org.sid.comptemanagement.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "UTILISATEUR")
 @Data
+@Accessors(chain = true)
 public class Utilisateur implements Serializable {
     private static final long serialVersionUID = 1L;
 

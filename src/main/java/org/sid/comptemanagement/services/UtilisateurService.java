@@ -3,7 +3,6 @@ package org.sid.comptemanagement.services;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.sid.comptemanagement.dto.UtilisateurDto;
-import org.sid.comptemanagement.entities.Utilisateur;
 import org.sid.comptemanagement.repositories.UtilisateurRepository;
 import org.springframework.stereotype.Service;
 

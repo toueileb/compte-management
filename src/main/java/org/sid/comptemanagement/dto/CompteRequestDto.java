@@ -10,19 +10,18 @@ import java.math.BigDecimal;
  * The type Compte request dto.
  */
 @Data
-@Accessors(chain = true)
 public class CompteRequestDto {
 
     /**
      * The Id.
      */
-    @NonNull
+
     protected Long id;
 
-    @NonNull
+
     private BigDecimal transactionAmount;
 
-    @NonNull
+
     private Boolean isDeposit;
 
 }

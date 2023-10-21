@@ -2,6 +2,7 @@ package org.sid.comptemanagement.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -12,6 +13,7 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "MOUVEMENT")
 @Data
+@Accessors(chain = true)
 public class Mouvement implements Serializable {
     private static final long serialVersionUID = 1L;
 

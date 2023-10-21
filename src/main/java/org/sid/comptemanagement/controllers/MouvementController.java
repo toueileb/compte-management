@@ -3,7 +3,6 @@ package org.sid.comptemanagement.controllers;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.sid.comptemanagement.dto.MouvementDto;
-import org.sid.comptemanagement.entities.Mouvement;
 import org.sid.comptemanagement.services.MouvementService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
