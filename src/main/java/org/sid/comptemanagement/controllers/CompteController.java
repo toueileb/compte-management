@@ -3,12 +3,9 @@ package org.sid.comptemanagement.controllers;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.sid.comptemanagement.dto.CompteDto;
-import org.sid.comptemanagement.entities.Compte;
+import org.sid.comptemanagement.dto.CompteRequestDto;
 import org.sid.comptemanagement.services.CompteService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * The type Compte controller.
@@ -32,4 +29,14 @@ public class CompteController {
         return compteService.getCompteById(compteId);
     }
 
+    /**
+     * Add money to count.
+     *
+     * @param compteRequestDto the compte request dto
+     */
+    @PostMapping("/modifyAccountBalance")
+    public void modifyAccountBalance(@RequestBody CompteRequestDto compteRequestDto){
+        log.debug("compteRequestDto: {}", compteRequestDto);
+        compteService.modifyAccountBalance(compteRequestDto);
+    }
 }
