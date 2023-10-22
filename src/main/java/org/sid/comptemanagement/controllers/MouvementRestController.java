@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * The type Mouvement controller.
+ * The type Mouvement rest controller.
  */
 @RestController
 @RequestMapping("mouvements")
 @RequiredArgsConstructor
 @Slf4j
-public class MouvementController {
+public class MouvementRestController {
     private final MouvementService mouvementService;
 
     /**

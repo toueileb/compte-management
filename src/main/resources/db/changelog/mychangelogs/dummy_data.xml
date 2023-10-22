@@ -280,72 +280,72 @@
     <!-- Insertion de données dans la table MOUVEMENT à partir de l'ID 49 -->
     <changeSet id="50" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (49, 49, 4900.00, 'Référence 49', 1)</sql>
+             VALUES (49, 49, 4900.00, 'REF 49', 1)</sql>
     </changeSet>
 
     <changeSet id="51" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (50, 50, 5000.00, 'Référence 50', 2)</sql>
+             VALUES (50, 50, 5000.00, 'REF 50', 2)</sql>
     </changeSet>
 
     <changeSet id="52" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (51, 51, 5100.00, 'Référence 51', 1)</sql>
+             VALUES (51, 51, 5100.00, 'REF 51', 1)</sql>
     </changeSet>
 
     <changeSet id="53" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (52, 52, 5200.00, 'Référence 52', 2)</sql>
+             VALUES (52, 52, 5200.00, 'REF 52', 2)</sql>
     </changeSet>
 
     <changeSet id="54" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (53, 53, 5300.00, 'Référence 53', 1)</sql>
+             VALUES (53, 53, 5300.00, 'REF 53', 1)</sql>
     </changeSet>
 
     <changeSet id="55" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (54, 54, 5400.00, 'Référence 54', 2)</sql>
+             VALUES (54, 54, 5400.00, 'REF 54', 2)</sql>
     </changeSet>
 
     <changeSet id="56" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (55, 55, 5500.00, 'Référence 55', 1)</sql>
+             VALUES (55, 55, 5500.00, 'REF 55', 1)</sql>
     </changeSet>
 
     <changeSet id="57" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (56, 56, 5600.00, 'Référence 56', 2)</sql>
+             VALUES (56, 56, 5600.00, 'REF 56', 2)</sql>
     </changeSet>
 
     <changeSet id="58" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (57, 57, 5700.00, 'Référence 57', 1)</sql>
+             VALUES (57, 57, 5700.00, 'REF 57', 1)</sql>
     </changeSet>
 
     <changeSet id="59" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (58, 58, 5800.00, 'Référence 58', 2)</sql>
+             VALUES (58, 58, 5800.00, 'REF 58', 2)</sql>
     </changeSet>
 
     <changeSet id="60" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (59, 59, 5900.00, 'Référence 59', 1)</sql>
+             VALUES (59, 59, 5900.00, 'REF 59', 1)</sql>
     </changeSet>
 
     <changeSet id="61" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (60, 60, 6000.00, 'Référence 60', 2)</sql>
+             VALUES (60, 60, 6000.00, 'REF 60', 2)</sql>
     </changeSet>
 
     <changeSet id="62" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (61, 61, 6100.00, 'Référence 61', 1)</sql>
+             VALUES (61, 61, 6100.00, 'REF 61', 1)</sql>
     </changeSet>
 
     <changeSet id="63" author="toueileb">
         <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (62, 62, 6200.00, 'Référence 62', 2)</sql>
+             VALUES (62, 62, 6200.00, 'REF 62', 2)</sql>
     </changeSet>
 
 

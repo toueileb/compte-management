@@ -41,6 +41,7 @@ public class MouvementDto {
         return new MouvementDto()
                 .setId(mouvement.getId())
                 .setJour(mouvement.getJour())
+                .setReference(mouvement.getReference())
                 .setSolde(mouvement.getSolde());
     }
 }

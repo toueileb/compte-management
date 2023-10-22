@@ -8,13 +8,13 @@ import org.sid.comptemanagement.services.CompteService;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * The type Compte controller.
+ * The type Compte rest controller.
  */
 @RestController
 @RequestMapping("comptes")
 @RequiredArgsConstructor
 @Slf4j
-public class CompteController {
+public class CompteRestController {
     private final CompteService compteService;
 
     /**
@@ -30,7 +30,7 @@ public class CompteController {
     }
 
     /**
-     * Add money to count.
+     * Modify account balance.
      *
      * @param compteRequestDto the compte request dto
      */
