@@ -5,8 +5,6 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 import org.sid.comptemanagement.entities.Utilisateur;
 
-import java.time.LocalDateTime;
-
 /**
  * The type Utilisateur dto.
  */
@@ -14,22 +12,13 @@ import java.time.LocalDateTime;
 @Accessors(chain = true)
 public class UtilisateurDto {
 
-    /**
-     * The Id.
-     */
-    protected Long id;
+    private Long id;
 
-    private Boolean accountExpired;
+    private String email;
 
-    private Boolean accountLocked;
+    private String lastName;
 
-    private String agence;
-
-    private String langue;
-
-    private String typeProfile;
-
-    private LocalDateTime dateLastConnection;
+    private String firstName;
 
     private Long compteId;
 
@@ -46,12 +35,9 @@ public class UtilisateurDto {
 
         return new UtilisateurDto()
                 .setId(utilisateur.getId())
-                .setAccountExpired(utilisateur.getAccountExpired())
-                .setAccountLocked(utilisateur.getAccountLocked())
-                .setAgence(utilisateur.getAgence())
-                .setLangue(utilisateur.getLangue())
-                .setTypeProfile(utilisateur.getTypeProfile())
-                .setDateLastConnection(utilisateur.getDateLastConnection())
+                .setEmail(utilisateur.getEmail())
+                .setFirstName(utilisateur.getFirstName())
+                .setLastName(utilisateur.getLastName())
                 .setCompteId(utilisateur.getCompte().getId());
     }
 

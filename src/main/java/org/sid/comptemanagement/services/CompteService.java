@@ -1,14 +1,14 @@
 package org.sid.comptemanagement.services;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.sid.comptemanagement.controllers.request.CompteRequestDto;
 import org.sid.comptemanagement.dto.CompteDto;
-import org.sid.comptemanagement.dto.CompteRequestDto;
 import org.sid.comptemanagement.entities.Compte;
 import org.sid.comptemanagement.exceptions.CompteNotFoundException;
 import org.sid.comptemanagement.repositories.CompteRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.annotation.Validated;
 
 import java.math.BigDecimal;
 
@@ -36,7 +36,7 @@ public class CompteService {
         return CompteDto.from(compte);
     }
 
-    public void modifyAccountBalance(@Validated CompteRequestDto compteRequestDto) {
+    public void modifyAccountBalance(@Valid CompteRequestDto compteRequestDto) {
 
         Compte updatedCompte = compteRepository.findById(compteRequestDto.getId())
                 .orElseThrow(() -> new CompteNotFoundException(String.format("Le compte %d n'existe pas dans la BD", compteRequestDto.getId())));

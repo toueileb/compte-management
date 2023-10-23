@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 
 /**
  * The persistent class for the UTILISATEUR database table.
@@ -17,33 +16,20 @@ import java.time.LocalDateTime;
 @Accessors(chain = true)
 public class Utilisateur implements Serializable {
     private static final long serialVersionUID = 1L;
-
-    /**
-     * The Id.
-     */
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    protected Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    @Column(name = "ACCOUNT_EXPIRED")
-    private Boolean accountExpired;
+    private String email;
 
-    @Column(name = "ACCOUNT_LOCKED")
-    private Boolean accountLocked;
+    @Column(name = "LAST_NAME", unique = true)
+    private String lastName;
 
-    @Column(name = "AGENCE")
-    private String agence;
+    @Column(name = "FIRST_NAME", unique = true)
+    private String firstName;
 
-    @Column(name = "LANGUE")
-    private String langue;
-
-    @Column(name = "TYPE_PROFILE")
-    private String typeProfile;
-
-
-    @Column(name = "DATE_LAST_CONNECTION")
-    @Temporal(TemporalType.TIMESTAMP)
-    private LocalDateTime dateLastConnection;
+    @Column(name = "PASSWORD")
+    private String password;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "COMPTE_ID", nullable = false)

@@ -6,7 +6,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.sid.comptemanagement.dto.CompteRequestDto;
+import org.sid.comptemanagement.controllers.request.CompteRequestDto;
 import org.sid.comptemanagement.entities.Compte;
 import org.sid.comptemanagement.repositories.CompteRepository;
 

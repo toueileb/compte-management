@@ -3,7 +3,7 @@ package org.sid.comptemanagement.controllers;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.sid.comptemanagement.dto.CompteDto;
-import org.sid.comptemanagement.dto.CompteRequestDto;
+import org.sid.comptemanagement.controllers.request.CompteRequestDto;
 import org.sid.comptemanagement.services.CompteService;
 import org.springframework.web.bind.annotation.*;
 

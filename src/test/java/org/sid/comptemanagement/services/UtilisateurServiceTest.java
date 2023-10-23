@@ -39,9 +39,9 @@ public class UtilisateurServiceTest {
         // Create test data
 
         Compte compte1 = new Compte().setId(1l);
-        Utilisateur user1 = new Utilisateur().setId(1l).setAgence("Agence 1").setCompte(compte1);
+        Utilisateur user1 = new Utilisateur().setId(1l).setCompte(compte1);
         Compte compte2 = new Compte().setId(2l);
-        Utilisateur user2 = new Utilisateur().setId(2l).setAgence("Agence 2").setCompte(compte2);
+        Utilisateur user2 = new Utilisateur().setId(2l).setCompte(compte2);
         List<Utilisateur> userList = List.of(
                 user1,
                 user2
