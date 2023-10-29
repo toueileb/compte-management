@@ -25,7 +25,7 @@ public class Compte implements Serializable {
      * The Id.
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
 
 
@@ -46,7 +46,5 @@ public class Compte implements Serializable {
     @Column(name = "TYPE_COMPTE")
     private String typeCompte;
 
-    @OneToMany(mappedBy = "compte", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<Mouvement> mouvements = new LinkedHashSet<>(0);
 
 }

@@ -14,6 +14,9 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import static org.springframework.http.HttpMethod.POST;
 
+/**
+ * The type Security configuration.
+ */
 @EnableWebSecurity
 @Configuration
 @RequiredArgsConstructor
@@ -34,18 +37,24 @@ public class SecurityConfiguration {
             "/swagger-ui/**",
             "/swagger-ui.html",
             "/webjars/**",
+            "/mouvements/**",
             "/v3/api-docs/swagger-config",
     };
 
 
+    /**
+     * Security filter chain security filter chain.
+     *
+     * @param http the http
+     * @return the security filter chain
+     * @throws Exception the exception
+     */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(req ->
                         req.requestMatchers(WHITE_LIST_URL)
-                                .permitAll()
-                                .requestMatchers(POST, "/users")
                                 .permitAll()
                                 .anyRequest()
                                 .authenticated()
@@ -56,6 +65,11 @@ public class SecurityConfiguration {
         return http.build();
     }
 
+    /**
+     * Password encoder password encoder.
+     *
+     * @return the password encoder
+     */
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

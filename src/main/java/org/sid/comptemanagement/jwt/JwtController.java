@@ -1,5 +1,6 @@
 package org.sid.comptemanagement.jwt;
 
+import lombok.RequiredArgsConstructor;
 import org.sid.comptemanagement.configuration.MyUserDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -14,19 +15,37 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * The type Jwt controller.
+ */
 @RestController
+@RequiredArgsConstructor
 public class JwtController {
 
 
-    @Autowired
-    JwtUtils jwtUtils;
+    /**
+     * The Jwt utils.
+     */
+    private final JwtUtils jwtUtils;
 
-    @Autowired
-    MyUserDetailService service;
+    /**
+     * The Service.
+     */
 
-    @Autowired
-    AuthenticationManagerBuilder authenticationManagerBuilder;
+    private final MyUserDetailService service;
 
+    /**
+     * The Authentication manager builder.
+     */
+
+    private final AuthenticationManagerBuilder authenticationManagerBuilder;
+
+    /**
+     * Create auth token response entity.
+     *
+     * @param jwtRequest the jwt request
+     * @return the response entity
+     */
     @PostMapping("/authenticate")
     public ResponseEntity<?> createAuthToken(@RequestBody JwtRequest jwtRequest) {
         Authentication authentication = logUser(jwtRequest.getEmail(), jwtRequest.getPassword());
@@ -37,6 +56,13 @@ public class JwtController {
         return new ResponseEntity<>(new JwtResponse(((User) principal).getUsername()), httpHeaders, HttpStatus.OK);
     }
 
+    /**
+     * Log user authentication.
+     *
+     * @param mail     the mail
+     * @param password the password
+     * @return the authentication
+     */
     public Authentication logUser(String mail, String password) {
         Authentication authentication = authenticationManagerBuilder.getObject().authenticate(new UsernamePasswordAuthenticationToken(mail, password));
         SecurityContextHolder.getContext().setAuthentication(authentication);

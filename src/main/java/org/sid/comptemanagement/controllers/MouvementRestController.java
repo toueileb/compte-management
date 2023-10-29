@@ -1,5 +1,6 @@
 package org.sid.comptemanagement.controllers;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.sid.comptemanagement.dto.MouvementDto;
@@ -18,6 +19,7 @@ import java.util.List;
 @RequestMapping("mouvements")
 @RequiredArgsConstructor
 @Slf4j
+@SecurityRequirement(name = "bearerAuth")
 public class MouvementRestController {
     private final MouvementService mouvementService;
 

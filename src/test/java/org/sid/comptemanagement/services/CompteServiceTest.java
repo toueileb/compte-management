@@ -1,13 +1,13 @@
 package org.sid.comptemanagement.services;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
+import org.mockito.*;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.sid.comptemanagement.controllers.request.CompteRequestDto;
 import org.sid.comptemanagement.entities.Compte;
+import org.sid.comptemanagement.enums.TypeMouvementEnum;
 import org.sid.comptemanagement.repositories.CompteRepository;
 
 import java.math.BigDecimal;
@@ -29,6 +29,23 @@ public class CompteServiceTest {
 
     @InjectMocks
     private CompteService compteService;
+
+    @Mock
+    private MouvementService mouvementService;
+
+    @Captor
+    private ArgumentCaptor<Long> idCaptor;
+
+    @Captor
+    private ArgumentCaptor<BigDecimal> soldeCaptor;
+
+    @Captor
+    private ArgumentCaptor<TypeMouvementEnum> typeMouvementEnumCaptor;
+
+    /*@Before
+    public void setup() {
+        MockitoAnnotations.openMocks(this);
+    }*/
 
     /**
      * Test get compte by id.
@@ -77,6 +94,9 @@ public class CompteServiceTest {
 
         // Call the method to be tested
         compteService.modifyAccountBalance(compteRequestDto);
+
+        // Configure the behavior of mouvementService.save to do nothing
+        Mockito.lenient().doNothing().when(mouvementService).saveMouvement(idCaptor.capture(), soldeCaptor.capture(), typeMouvementEnumCaptor.capture());
 
         // Verify the result
         assertEquals(new BigDecimal("1200.00"), compte.getSolde()); // Verify that the solde is updated correctly

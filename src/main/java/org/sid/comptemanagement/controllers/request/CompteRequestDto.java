@@ -16,7 +16,6 @@ public class CompteRequestDto {
     /**
      * The Id.
      */
-
     @NotEmpty
     protected Long id;
 

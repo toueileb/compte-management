@@ -13,6 +13,9 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type My user detail service.
+ */
 @Service
 @RequiredArgsConstructor
 public class MyUserDetailService implements UserDetailsService {
