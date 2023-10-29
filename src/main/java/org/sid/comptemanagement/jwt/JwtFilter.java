@@ -1,5 +1,6 @@
 package org.sid.comptemanagement.jwt;
 
+import lombok.RequiredArgsConstructor;
 import org.sid.comptemanagement.configuration.MyUserDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -14,15 +15,22 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * The type Jwt filter.
+ */
 @Component
+@RequiredArgsConstructor
 public class JwtFilter extends OncePerRequestFilter {
 
-    @Autowired
-    MyUserDetailService service;
 
-    @Autowired
-    JwtUtils jwtUtils;
+    private final MyUserDetailService service;
 
+
+    private final JwtUtils jwtUtils;
+
+    /**
+     * The constant AUTHORIZATION_HEADER.
+     */
     public static final String AUTHORIZATION_HEADER = "Authorization";
 
     @Override
@@ -39,7 +47,8 @@ public class JwtFilter extends OncePerRequestFilter {
 
     private boolean isUrlPermitted(HttpServletRequest request) {
         String url = request.getRequestURI();
-        if(url.equals("/authenticate") || url.equals("/users")) {
+        //if(url.equals("/authenticate") || url.equals("/users")) {
+        if(url.equals("/authenticate")) {
             return true;
         }
         return false;

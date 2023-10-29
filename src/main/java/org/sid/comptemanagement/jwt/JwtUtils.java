@@ -17,9 +17,15 @@ import java.security.Key;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * The type Jwt utils.
+ */
 @Component
 public class JwtUtils {
 
+    /**
+     * The Jwt validity.
+     */
     long JWT_VALIDITY = 5 * 60 * 60;
 
     private static final String AUTHORITIES_KEY = "sub";
@@ -28,11 +34,22 @@ public class JwtUtils {
 
     private final JwtParser jwtParser;
 
+    /**
+     * Instantiates a new Jwt utils.
+     *
+     * @param secret the secret
+     */
     public JwtUtils(@Value("${jwt.secret}") String secret) {
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
         this.jwtParser = Jwts.parserBuilder().setSigningKey(key).build();
     }
 
+    /**
+     * Generate token string.
+     *
+     * @param authentication the authentication
+     * @return the string
+     */
     public String generateToken(Authentication authentication) {
         Map<String, Object> claims = new HashMap<>();
         return Jwts.builder()
@@ -43,6 +60,12 @@ public class JwtUtils {
                 .signWith(key).compact();
     }
 
+    /**
+     * Gets authentication.
+     *
+     * @param token the token
+     * @return the authentication
+     */
     public Authentication getAuthentication(String token) {
         Claims claims = jwtParser.parseClaimsJws(token).getBody();
 

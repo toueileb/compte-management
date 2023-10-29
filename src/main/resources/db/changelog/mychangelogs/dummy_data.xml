@@ -138,23 +138,23 @@
 
     <changeSet id="26" author="toueileb">
         <sql>INSERT INTO UTILISATEUR (id, LAST_NAME, FIRST_NAME, EMAIL, PASSWORD, COMPTE_ID)
-             VALUES (6, 'Garcia', 'Maria', 'maria.garcia@example.com', 'securepwd789', 6)</sql>
+             VALUES (6, 'Garcia', 'Maria', 'maria.garcia@example.com', '$2a$10$lQmxHXiUjh69F2/Q.6xskODOFMEGoCwcV/LZ5UesZ9KYCeKiLeVRW', 6)</sql>
     </changeSet>
     <changeSet id="27" author="toueileb">
         <sql>INSERT INTO UTILISATEUR (id, LAST_NAME, FIRST_NAME, EMAIL, PASSWORD, COMPTE_ID)
-             VALUES (7, 'Williams', 'James', 'james.williams@example.com', 'userpass123', 7)</sql>
+             VALUES (7, 'Williams', 'James', 'james.williams@example.com', '$2a$10$lQmxHXiUjh69F2/Q.6xskODOFMEGoCwcV/LZ5UesZ9KYCeKiLeVRW', 7)</sql>
     </changeSet>
     <changeSet id="28" author="toueileb">
         <sql>INSERT INTO UTILISATEUR (id, LAST_NAME, FIRST_NAME, EMAIL, PASSWORD, COMPTE_ID)
-             VALUES (8, 'Martinez', 'Linda', 'linda.martinez@example.com', 'lindapassword456', 8)</sql>
+             VALUES (8, 'Martinez', 'Linda', 'linda.martinez@example.com', '$2a$10$lQmxHXiUjh69F2/Q.6xskODOFMEGoCwcV/LZ5UesZ9KYCeKiLeVRW', 8)</sql>
     </changeSet>
     <changeSet id="29" author="toueileb">
         <sql>INSERT INTO UTILISATEUR (id, LAST_NAME, FIRST_NAME, EMAIL, PASSWORD, COMPTE_ID)
-             VALUES (9, 'Anderson', 'William', 'william.anderson@example.com', 'williampwd789', 9)</sql>
+             VALUES (9, 'Anderson', 'William', 'william.anderson@example.com', '$2a$10$lQmxHXiUjh69F2/Q.6xskODOFMEGoCwcV/LZ5UesZ9KYCeKiLeVRW', 9)</sql>
     </changeSet>
     <changeSet id="30" author="toueileb">
         <sql>INSERT INTO UTILISATEUR (id, LAST_NAME, FIRST_NAME, EMAIL, PASSWORD, COMPTE_ID)
-             VALUES (10, 'Harris', 'Jennifer', 'jennifer.harris@example.com', 'mypassword123', 10)</sql>
+             VALUES (10, 'Harris', 'Jennifer', 'jennifer.harris@example.com', '$2a$10$lQmxHXiUjh69F2/Q.6xskODOFMEGoCwcV/LZ5UesZ9KYCeKiLeVRW', 10)</sql>
     </changeSet>
 
 
@@ -164,73 +164,28 @@
 
     <!-- Insertion de données dans la table MOUVEMENT à partir de l'ID 49 -->
     <changeSet id="50" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (49, 49, 4900.00, 'REF 49', 1)</sql>
+        <sql>INSERT INTO MOUVEMENT (id, date, SOLDE, reference, compte_id, TYPE_MOUVEMENT)
+             VALUES (1, TIMESTAMP '2023-10-28 00:00:00', 100.00, 'Mouvement 1', 1, 'ADD')</sql>
     </changeSet>
 
     <changeSet id="51" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (50, 50, 5000.00, 'REF 50', 2)</sql>
+        <sql>INSERT INTO MOUVEMENT (id, date, SOLDE, reference, compte_id, TYPE_MOUVEMENT)
+             VALUES (2, TIMESTAMP '2023-10-29 00:00:00', 150.50, 'Mouvement 2', 2, 'ADD')</sql>
     </changeSet>
 
     <changeSet id="52" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (51, 51, 5100.00, 'REF 51', 1)</sql>
+        <sql>INSERT INTO MOUVEMENT (id, date, SOLDE, reference, compte_id, TYPE_MOUVEMENT)
+             VALUES (3, TIMESTAMP '2023-10-30 00:00:00', 75.25, 'Mouvement 3', 1, 'ADD')</sql>
     </changeSet>
 
     <changeSet id="53" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (52, 52, 5200.00, 'REF 52', 2)</sql>
+        <sql>INSERT INTO MOUVEMENT (id, date, SOLDE, reference, compte_id, TYPE_MOUVEMENT)
+             VALUES (4, TIMESTAMP '2023-10-31 00:00:00', 200.00, 'Mouvement 4', 3, 'WITHDRAW')</sql>
     </changeSet>
 
     <changeSet id="54" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (53, 53, 5300.00, 'REF 53', 1)</sql>
-    </changeSet>
-
-    <changeSet id="55" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (54, 54, 5400.00, 'REF 54', 2)</sql>
-    </changeSet>
-
-    <changeSet id="56" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (55, 55, 5500.00, 'REF 55', 1)</sql>
-    </changeSet>
-
-    <changeSet id="57" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (56, 56, 5600.00, 'REF 56', 2)</sql>
-    </changeSet>
-
-    <changeSet id="58" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (57, 57, 5700.00, 'REF 57', 1)</sql>
-    </changeSet>
-
-    <changeSet id="59" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (58, 58, 5800.00, 'REF 58', 2)</sql>
-    </changeSet>
-
-    <changeSet id="60" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (59, 59, 5900.00, 'REF 59', 1)</sql>
-    </changeSet>
-
-    <changeSet id="61" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (60, 60, 6000.00, 'REF 60', 2)</sql>
-    </changeSet>
-
-    <changeSet id="62" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (61, 61, 6100.00, 'REF 61', 1)</sql>
-    </changeSet>
-
-    <changeSet id="63" author="toueileb">
-        <sql>INSERT INTO MOUVEMENT (id, jour, SOLDE, reference, compte_id)
-             VALUES (62, 62, 6200.00, 'REF 62', 2)</sql>
+        <sql>INSERT INTO MOUVEMENT (id, date, SOLDE, reference, compte_id, TYPE_MOUVEMENT)
+             VALUES (5, TIMESTAMP '2023-11-01 00:00:00', 50.75, 'Mouvement 5', 2, 'WITHDRAW')</sql>
     </changeSet>
 
 

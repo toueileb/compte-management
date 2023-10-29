@@ -5,6 +5,7 @@ import lombok.experimental.Accessors;
 import org.sid.comptemanagement.entities.Mouvement;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 
 /**
@@ -20,11 +21,13 @@ public class MouvementDto {
      */
     protected Long id;
 
-    private Long jour;
+    private LocalDateTime date;
 
     private String reference;
 
     private BigDecimal solde;
+
+    private String typeMouvement;
 
 
     /**
@@ -40,8 +43,9 @@ public class MouvementDto {
 
         return new MouvementDto()
                 .setId(mouvement.getId())
-                .setJour(mouvement.getJour())
+                .setDate(mouvement.getDate())
                 .setReference(mouvement.getReference())
-                .setSolde(mouvement.getSolde());
+                .setSolde(mouvement.getSolde())
+                .setTypeMouvement(mouvement.getTypeMouvement().getLibelle());
     }
 }

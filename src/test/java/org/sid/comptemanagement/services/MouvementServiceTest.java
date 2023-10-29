@@ -39,8 +39,8 @@ public class MouvementServiceTest {
 
         // Create test data
         Long compteId = 1L;
-        var mouvement1 = new Mouvement().setId(1l).setSolde(BigDecimal.valueOf(1000)).setReference("REF 1").setJour(1l).setCompte(new Compte().setId(compteId));
-        var mouvement2 = new Mouvement().setId(2l).setSolde(BigDecimal.valueOf(2000)).setReference("REF 2").setJour(2l).setCompte(new Compte().setId(compteId));
+        var mouvement1 = new Mouvement().setId(1l).setSolde(BigDecimal.valueOf(1000)).setReference("REF 1").setCompte(new Compte().setId(compteId));
+        var mouvement2 = new Mouvement().setId(2l).setSolde(BigDecimal.valueOf(2000)).setReference("REF 2").setCompte(new Compte().setId(compteId));
 
         // Configure the behavior of the mocked repository (mouvementRepository) using Mockito
         when(mouvementRepository.getMouvementByCompteId(compteId)).thenReturn(List.of(mouvement1, mouvement2));

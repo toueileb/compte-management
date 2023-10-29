@@ -2,6 +2,7 @@ package org.sid.comptemanagement.repositories;
 
 import org.sid.comptemanagement.entities.Mouvement;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -18,4 +19,7 @@ public interface MouvementRepository extends JpaRepository<Mouvement, Long> {
      * @return the mouvement by compte id
      */
     List<Mouvement> getMouvementByCompteId(Long compteId);
+
+    @Query("SELECT MAX(m.id) FROM Mouvement m")
+    Long getMaxId();
 }
